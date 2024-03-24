@@ -4,7 +4,6 @@
 <img src='./src/logo.svg' height='120'/>
 </p>
 
-
 Starter for [Vite](https://github.com/vuejs/vite) + [VueUse](https://github.com/vueuse/vueuse) + [TypeScript](https://www.typescriptlang.org/)
 
 🌐 [Live Demo](https://vueuse-vite-starter.netlify.app/)

@@ -1,12 +1,11 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
-  <NavBar />
-  <main>
-    main of content
-  </main>
+  nav bar
 </template>
 
 <style scoped>
+
 </style>

@@ -19,7 +19,7 @@ export default defineConfig({
         'src/**/*.tsx',
         'src/**/*.ts',
       ],
-    }
+    },
   },
   shortcuts: [
     // ...
@@ -27,16 +27,24 @@ export default defineConfig({
   theme: {
     colors: {
       // ...
-    }
+    },
   },
   presets: [
-    presetUno(),
+    presetIcons({
+      extraProperties: {
+        'display': 'inline-block',
+        'height': '1.2em',
+        'width': '1.2em',
+        'vertical-align': 'text-bottom',
+      },
+    }),
     presetAttributify(),
-    presetIcons(),
+    presetUno(),
     presetTypography(),
     presetWebFonts({
       fonts: {
-        // ...
+        sans: 'Inter:400,600,800',
+        mono: 'DM Mono:400,600',
       },
     }),
   ],

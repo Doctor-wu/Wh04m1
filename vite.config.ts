@@ -146,6 +146,9 @@ export default defineConfig({
         'vue-router',
         '@vueuse/core',
       ],
+      dirs: [
+        './src/*',
+      ],
     }),
 
     Components({

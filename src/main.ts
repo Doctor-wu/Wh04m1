@@ -20,6 +20,7 @@ import { setupRouterScroller } from 'vue-router-better-scroller'
 import FloatingVue from 'floating-vue'
 import { createPinia } from 'pinia'
 import App from './App.vue'
+import WrapperPost from './components/WrapperPost.vue'
 
 const routes = autoRoutes.map((i) => {
   return {
@@ -40,6 +41,7 @@ export const createApp = ViteSSG(
 
     app.use(FloatingVue)
     app.use(createPinia())
+    app.component('WrapperPost', WrapperPost)
 
     if (isClient) {
       const html = document.querySelector('html')!

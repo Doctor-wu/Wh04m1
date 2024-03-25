@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "build": "vite build",
+    "build": "cross-env NODE_ENV=production vite-ssg build",
     "dev": "vite --port=9582 --open",
     "lint": "eslint .",
     "compress": "esno scripts/img-compress-staged.ts"

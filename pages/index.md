@@ -1,11 +1,9 @@
 ---
 title: Doctor Wu
-description: About Doctor Wu
-image: https://antfu.me/og.png
-plum: true
+description: About me
 ---
 
-Hey, I am Doctor Wu.
+Hey, I am Doctor Wu, this page is under developing 🚧.
 
 ---
 

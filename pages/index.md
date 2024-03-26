@@ -4,7 +4,7 @@ description: About me
 image: https://doctorwu.info/og.png
 ---
 
-> This page designs highly inspired by <GithubAvatar avatarId="11247099" /> [Anthony Fu](https://antfu.me).
+> This page designs highly inspired by <span class="text-nowrap"><GithubAvatar avatarId="11247099" /> [Anthony Fu](https://antfu.me)</span>
 
 Hey, I am Doctor Wu, this page is under developing 🚧.
 

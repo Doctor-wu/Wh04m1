@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
+import { formatDate } from '~/utils/formatDate'
 import type { Post } from '~/types'
 
 const props = defineProps<{
@@ -8,9 +9,21 @@ const props = defineProps<{
   extra?: Post[]
 }>()
 const router = useRouter()
-const routes: Post[] = router.getRoutes()
-  .filter(i => i.path.startsWith('/posts') && i.meta.frontmatter.date && !i.meta.frontmatter.draft)
-  .filter(i => !i.path.endsWith('.html') && (i.meta.frontmatter.type || 'blog').split('+').includes(props.type))
+const routes: Post[] = router
+  .getRoutes()
+  .filter(
+    i =>
+      i.path.startsWith('/posts')
+      && i.meta.frontmatter.date
+      && !i.meta.frontmatter.draft,
+  )
+  .filter(
+    i =>
+      !i.path.endsWith('.html')
+      && (i.meta.frontmatter.type || 'blog')
+        .split('+')
+        .includes(props.type || 'blog'),
+  )
   .map(i => ({
     path: i.meta.frontmatter.redirect || i.path,
     title: i.meta.frontmatter.title,
@@ -24,7 +37,7 @@ const routes: Post[] = router.getRoutes()
   }))
 
 const posts = computed(() =>
-  [...(props.posts || routes), ...props.extra || []]
+  [...(props.posts || routes), ...(props.extra || [])]
     .sort((a, b) => +new Date(b.date) - +new Date(a.date))
     .filter(i => !englishOnly.value || i.lang !== 'zh'),
 )
@@ -36,6 +49,43 @@ const posts = computed(() =>
       { nothing here yet }
     </div>
   </template>
+  <ul v-else>
+    <template v-for="(post, idx) in posts" :key="post.path">
+      <div
+        class="slide-enter"
+        :style="{
+          '--enter-stage': idx,
+          '--enter-step': '60ms',
+        }"
+      >
+        <li>
+          <component
+            :is="post.path.includes('://') ? 'a' : 'RouterLink'"
+            v-bind="
+              post.path.includes('://')
+                ? {
+                  href: post.path,
+                  target: '_blank',
+                  rel: 'noopener noreferrer',
+                }
+                : {
+                  to: post.path,
+                }
+            "
+            class="item block font-normal mb-6 mt-2 no-underline"
+          >
+            <span class="text-sm mr-2">
+              {{ post.title }}
+            </span>
+            <span class="text-sm op50">
+              {{ formatDate(post.date, false) }}
+              <span v-if="post.duration">· {{ post.duration }}</span>
+            </span>
+          </component>
+        </li>
+      </div>
+    </template>
+  </ul>
 </template>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

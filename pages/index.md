@@ -20,4 +20,4 @@ Find me on
   <a href="https://juejin.cn/user/1723677080556621" target="_blank"><span op75 i-simple-icons-juejin /> 掘金</a>
 </p>
 
-<!-- If you enjoy my works, consider sponsoring me on [<span i-carbon-favorite /> GitHub Sponsor](https://github.com/sponsors/antfu) or [<span i-carbon-lightning /> 爱发电](https://afdian.net/a/antfu) to keep them sustainable. -->
+<!-- If you enjoy my works, consider sponsoring me on [<span i-carbon-favorite /> GitHub Sponsor](https://github.com/sponsors/Doctor-wu) or [<span i-carbon-lightning /> 爱发电](https://afdian.net/a/Doctor-wu) to keep them sustainable. -->

@@ -3,7 +3,7 @@ import dayjs from 'dayjs'
 import { nextTick } from 'vue'
 
 export const isDark = useDark()
-export const englishOnly = useStorage('antfu-english-only', false)
+export const englishOnly = useStorage('doctorwu-english-only', false)
 
 /**
  * Credit to [@hooray](https://github.com/hooray)

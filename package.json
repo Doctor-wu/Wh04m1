@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "build": "cross-env NODE_ENV=production vite-ssg build",
+    "build": "cross-env NODE_ENV=production vite-ssg build && esno ./scripts/rss.ts",
     "dev": "vite --port=9582 --open",
     "lint": "eslint .",
     "compress": "esno scripts/img-compress-staged.ts"

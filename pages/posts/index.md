@@ -1,5 +1,6 @@
 ---
-title: Blog - Anthony Fu
+title: Blog - Doctor Wu
+description: Blog land, I will post here about my thoughts and experiences.
 display: ''
 ---
 

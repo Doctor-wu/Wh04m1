@@ -11,6 +11,8 @@ declare module 'vue' {
     GithubAvatar: typeof import('./src/components/widgets/GithubAvatar.vue')['default']
     Logo: typeof import('./src/components/Logo.vue')['default']
     NavBar: typeof import('./src/components/NavBar.vue')['default']
+    PeopleWithAvatar: typeof import('./src/components/widgets/PeopleWithAvatar.vue')['default']
+    PersonWithAvatar: typeof import('./src/components/widgets/PersonWithAvatar.vue')['default']
     Posts: typeof import('./src/components/Posts.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

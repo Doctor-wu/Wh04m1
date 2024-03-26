@@ -14,9 +14,9 @@
          <rect width="1200" height="675" fill="#fff" id="rect1" />
       </clipPath>
       <linearGradient id="linearGradient59" inkscape:collect="always">
-         <stop style="stop-color:#7a4cec;stop-opacity:0.99746835;" offset="0.08006814" id="stop60" />
-         <stop style="stop-color:#1e61d1;stop-opacity:0.69230771;" offset="0.3877061" id="stop62" />
-         <stop style="stop-color:#2cfa4b;stop-opacity:0.87088609;" offset="0.62158829" id="stop64" />
+         <stop style="stop-color:#7a4cec;stop-opacity:0.99746835;" offset="0.07206814" id="stop60" />
+         <stop style="stop-color:#1b4fd1;stop-opacity:0.81003582;" offset="0.36503944" id="stop62" />
+         <stop style="stop-color:#2cfa45;stop-opacity:0.90501791;" offset="0.62958831" id="stop64" />
          <stop style="stop-color:#d15191;stop-opacity:0.65285999;" offset="0.84688669" id="stop63" />
          <stop style="stop-color:#ca29b9;stop-opacity:0.52465481;" offset="0.93185687" id="stop61" />
       </linearGradient>
@@ -33,9 +33,9 @@
          cy="100.89993" fx="201.36967" fy="100.89993" r="558.40613"
          gradientTransform="matrix(0.966953,1.0828079,-0.97224852,0.86822296,-1.3757585,-418.38026)"
          gradientUnits="userSpaceOnUse" />
-      <filter inkscape:collect="always" style="color-interpolation-filters:sRGB" id="filter63" x="-0.31158959"
-         y="-0.54087523" width="1.6231792" height="2.0817505">
-         <feGaussianBlur inkscape:collect="always" stdDeviation="176.50161" id="feGaussianBlur63" />
+      <filter inkscape:collect="always" style="color-interpolation-filters:sRGB" id="filter63" x="-0.19271493"
+         y="-0.33452573" width="1.3854299" height="1.6690515">
+         <feGaussianBlur inkscape:collect="always" stdDeviation="109.16442" id="feGaussianBlur63" />
       </filter>
       <filter id="mask-powermask-path-effect2_inverse" inkscape:label="filtermask-powermask-path-effect2"
          style="color-interpolation-filters:sRGB" height="100" width="100" x="-50" y="-50">
@@ -55,13 +55,13 @@
    </defs>
    <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25"
       inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"
-      inkscape:zoom="0.31805817" inkscape:cx="481.04409" inkscape:cy="405.58619" inkscape:window-width="1408"
-      inkscape:window-height="847" inkscape:window-x="1848" inkscape:window-y="117" inkscape:window-maximized="0"
+      inkscape:zoom="0.31805817" inkscape:cx="484.18816" inkscape:cy="405.58619" inkscape:window-width="1440"
+      inkscape:window-height="847" inkscape:window-x="0" inkscape:window-y="855" inkscape:window-maximized="1"
       inkscape:current-layer="g1" />
    <g inkscape:groupmode="layer" inkscape:label="bg" id="g1" transform="translate(56.025006,249.85955)"
       style="display:inline">
       <rect
-         style="opacity:0.59113924;mix-blend-mode:normal;fill:#999999;fill-opacity:0.96862745;fill-rule:nonzero;paint-order:stroke fill markers;filter:url(#filter13)"
+         style="opacity:0.70538244;mix-blend-mode:normal;fill:#999999;fill-opacity:0.96862745;fill-rule:nonzero;paint-order:stroke fill markers;filter:url(#filter13)"
          id="rect65" width="964.13416" height="559.81989" x="-72.989243" y="-261.16904" />
       <rect
          style="opacity:1;fill:url(#radialGradient61);fill-opacity:0.968627;fill-rule:nonzero;paint-order:stroke fill markers;filter:url(#filter63)"

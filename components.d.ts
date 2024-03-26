@@ -12,6 +12,7 @@ declare module 'vue' {
     ListPost: typeof import('./src/components/ListPost.vue')['default']
     Logo: typeof import('./src/components/Logo.vue')['default']
     NavBar: typeof import('./src/components/NavBar.vue')['default']
+    Posts: typeof import('./src/components/Posts.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ToggleTheme: typeof import('./src/components/ToggleTheme.vue')['default']

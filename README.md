@@ -1,7 +1,5 @@
 <p align="center">
-<a href="https://app.netlify.com/sites/doctorwu/deploys">
 <img src="https://api.netlify.com/api/v1/badges/011da457-9ec5-41a8-ae63-733574c63873/deploy-status"></img>
-</a>
 <img alt="GitHub forks" src="https://img.shields.io/github/forks/Doctor-wu/Wh04m1">
 <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Doctor-wu/Wh04m1">
 </p>

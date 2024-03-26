@@ -1,6 +1,7 @@
 ---
 title: Doctor Wu
 description: About me
+image: https://doctorwu.info/og.png
 ---
 
 Hey, I am Doctor Wu, this page is under developing 🚧.

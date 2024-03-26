@@ -1,14 +1,10 @@
 <script setup lang="ts">
-import { getHostName } from '../utils/getHostName'
-
 const isDark = useDark()
 const logoColor = computed(() => isDark.value ? '#fdfdfd' : '#303030')
 </script>
 
 <template>
-  <ClientOnly>
-    <img class="w-9 h-9 rounded-4 dark:op75" :src="`${getHostName()}/avatar.jpg`" alt="Avatar">
-  </ClientOnly>
+  <img class="w-9 h-9 rounded-4 dark:op75" src="/avatar.jpg" alt="Avatar">
   <svg width="123" height="30" viewBox="0 0 820 200" xmlns="http://www.w3.org/2000/svg">
     <path
       id="signaturePath"

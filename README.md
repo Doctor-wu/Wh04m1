@@ -7,7 +7,7 @@
   <img src='./public/og.svg' height='180'/>
 </p>
 <p align="center">
-  This is my personal <a href="https://doctorwu.info">website</a>
+  This is my personal <a href="https://doctorwu.info" target="_blank">website</a>
 </p>
 <p align="center">
   <b>License</b>

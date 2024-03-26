@@ -37,13 +37,13 @@ const { y: scroll } = useWindowScroll()
         <RouterLink to="/sponsors-list" title="Sponsors">
           <div i-ri-user-heart-line />
         </RouterLink> -->
-        <a href="https://twitter.com/Doctorwu666" target="_blank" title="Twitter" class="lt-md:hidden">
+        <a href="https://twitter.com/Doctorwu666" target="_blank" title="Twitter">
           <div i-ri-twitter-x-fill />
         </a>
-        <a href="https://github.com/Doctor-wu" target="_blank" title="GitHub" class="lt-md:hidden">
+        <a href="https://github.com/Doctor-wu" target="_blank" title="GitHub">
           <div i-uil-github-alt />
         </a>
-        <a href="/feed.xml" target="_blank" title="RSS" class="lt-md:hidden">
+        <a href="/feed.xml" target="_blank" title="RSS">
           <div i-la-rss-square style="font-size:1.25rem; margin: 0 -0.125rem;" />
         </a>
         <ToggleTheme />

@@ -10,7 +10,8 @@ const blur = computed(() => isSmaller('md') ? 'blur(100px)' : 'blur(150px)')
 </script>
 
 <template>
-  <section id="land">
+  <section id="fantasy-land">
+    <p class="mask" />
     <section class="g-polygon-1" />
     <section class="g-polygon-2" />
     <section class="g-polygon-3" />
@@ -18,7 +19,8 @@ const blur = computed(() => isSmaller('md') ? 'blur(100px)' : 'blur(150px)')
 </template>
 
 <style scoped>
-#land {
+#fantasy-land {
+  will-change: auto;
   position: fixed;
   left: 0;
   top: 0;
@@ -29,9 +31,12 @@ const blur = computed(() => isSmaller('md') ? 'blur(100px)' : 'blur(150px)')
   & > section {
     position: absolute;
     opacity: v-bind(opacity);
+    transition: all ease-out 0.5s;
+    transform: scale(1);
+    animation: scale-in 2.5s linear;
   }
 
-  &::before {
+  & > .mask {
     content: '';
     position: absolute;
     top: 0;
@@ -45,7 +50,7 @@ const blur = computed(() => isSmaller('md') ? 'blur(100px)' : 'blur(150px)')
 
 .g-polygon-1 {
   bottom: 100px;
-  left: 50%;
+  left: 25%;
   transform: translate(-50%, 0);
   width: 45vw;
   height: 55vh;
@@ -55,7 +60,7 @@ const blur = computed(() => isSmaller('md') ? 'blur(100px)' : 'blur(150px)')
 
 .g-polygon-2 {
   bottom: 0px;
-  left: 30%;
+  left: 5%;
   transform: translate(-50%, 0);
   width: 65vw;
   height: 50vh;
@@ -72,11 +77,25 @@ const blur = computed(() => isSmaller('md') ? 'blur(100px)' : 'blur(150px)')
 
 .g-polygon-3 {
   bottom: 0px;
-  left: 70%;
+  left: 30%;
   transform: translate(-50%, 0);
   width: 65vw;
   height: 50vh;
   background: rgba(87, 80, 233);
   clip-path: polygon(80% 0, 100% 70%, 100% 100%, 20% 90%);
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.45);
+  }
+
+  40% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 </style>

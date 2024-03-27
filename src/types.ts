@@ -13,3 +13,25 @@ export interface Post {
   inperson?: boolean
   redirect?: string
 }
+
+export interface CustomFrontmatter {
+  type: 'post'
+  title: string
+  decorator?: boolean
+  subtitle?: string
+  class?: string
+  tocAlwaysOn?: boolean
+  display?: string
+  wrapperClass?: string
+  draft?: boolean
+  description?: string
+  date: string
+  lang?: 'en' | 'zh'
+  tags: string[]
+  redirect?: string
+  duration?: string
+  recording?: string
+  upcoming?: boolean
+  place?: string
+  placeLink?: string
+}

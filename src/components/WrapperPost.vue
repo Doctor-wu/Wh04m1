@@ -1,20 +1,20 @@
-<script setup lang='ts'>
+<script setup lang="ts">
+import type { CustomFrontmatter } from '~/types'
 import { formatDate } from '~/utils/formatDate'
 
-const { frontmatter } = defineProps({
-  frontmatter: {
-    type: Object,
-    required: true,
-  },
-})
+const { frontmatter } = defineProps<{
+  frontmatter: CustomFrontmatter
+}>()
 
 const router = useRouter()
 const route = useRoute()
 const content = ref<HTMLDivElement>()
 
 const base = getHostName()
-const tweetUrl = computed(() => `https://twitter.com/intent/tweet?text=${encodeURIComponent(`Reading @Doctorwu666\'s ${base}${route.path}\n\nI think...`)}`)
-
+const tweetUrl = computed(
+  () =>
+    `https://twitter.com/intent/tweet?text=${encodeURIComponent(`Reading @Doctorwu666\'s ${base}${route.path}\n\nI think...`)}`,
+)
 onMounted(() => {
   const navigate = () => {
     if (location.hash) {
@@ -31,9 +31,7 @@ onMounted(() => {
     }
   }
 
-  const handleAnchors = (
-    event: MouseEvent & { target: HTMLElement },
-  ) => {
+  const handleAnchors = (event: MouseEvent & { target: HTMLElement }) => {
     const link = event.target.closest('a')
 
     if (
@@ -75,22 +73,16 @@ onMounted(() => {
 </script>
 
 <template>
-  <ClientOnly v-if="frontmatter.plum">
-    <Plum />
+  <ClientOnly v-if="!frontmatter.decorator">
+    <FantasyLand />
   </ClientOnly>
-  <div
-    v-if="frontmatter.display ?? frontmatter.title"
-    class="prose m-auto mb-8"
-    :class="[frontmatter.wrapperClass]"
-  >
+  <div v-if="frontmatter.display ?? frontmatter.title" class="prose m-auto mb-8" :class="[frontmatter.wrapperClass]">
     <h1 class="mb-0 slide-enter-50">
       {{ frontmatter.display ?? frontmatter.title }}
     </h1>
-    <p
-      v-if="frontmatter.date"
-      class="opacity-50 !-mt-6 slide-enter-50"
-    >
-      {{ formatDate(frontmatter.date, false) }} <span v-if="frontmatter.duration">· {{ frontmatter.duration }}</span>
+    <p v-if="frontmatter.date" class="opacity-50 !-mt-6 slide-enter-50">
+      {{ formatDate(frontmatter.date, false) }}
+      <span v-if="frontmatter.duration">· {{ frontmatter.duration }}</span>
     </p>
     <p v-if="frontmatter.place" class="mt--4!">
       <span op50>at </span>
@@ -101,17 +93,12 @@ onMounted(() => {
         {{ frontmatter.place }}
       </span>
     </p>
-    <p
-      v-if="frontmatter.subtitle"
-      class="opacity-50 !-mt-6 italic slide-enter"
-    >
+    <p v-if="frontmatter.subtitle" class="opacity-50 !-mt-6 italic slide-enter">
       {{ frontmatter.subtitle }}
     </p>
-    <p
-      v-if="frontmatter.draft"
-      class="slide-enter" bg-orange-4:10 text-orange-4 border="l-3 orange-4" px4 py2
-    >
-      This is a draft post, the content may be incomplete. Please check back later.
+    <p v-if="frontmatter.draft" class="slide-enter" bg-orange-4:10 text-orange-4 border="l-3 orange-4" px4 py2>
+      This is a draft post, the content may be incomplete. Please check back
+      later.
     </p>
   </div>
   <article ref="content" :class="[frontmatter.tocAlwaysOn ? 'toc-always-on' : '', frontmatter.class]">
@@ -119,14 +106,14 @@ onMounted(() => {
   </article>
   <div v-if="route.path !== '/'" class="prose m-auto mt-8 mb-8 slide-enter animate-delay-500 print:hidden">
     <template v-if="frontmatter.duration">
-      <span op25> / </span>
+      <span font-mono op50>> </span>
+      <span op50>comment on </span>
       <a :href="tweetUrl" target="_blank" op50>twitter</a>
     </template>
     <br>
     <span font-mono op50>> </span>
     <RouterLink
-      :to="route.path.split('/').slice(0, -1).join('/') || '/'"
-      class="font-mono op50 hover:op75"
+      :to="route.path.split('/').slice(0, -1).join('/') || '/'" class="font-mono op50 hover:op75"
       v-text="'cd ..'"
     />
   </div>

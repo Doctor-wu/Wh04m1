@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <a
-    class="!transition-all !border-none !no-underline cursor-pointer !text-inherit inline-flex rounded-4 !h-6 pr-2 py-[0px] vertical-middle hover:bg-gray-100 hover:dark:bg-gray-800"
+    class="!transition-all !border-none !no-underline cursor-pointer !text-inherit inline-flex rounded-4 !h-6 pr-2 py-[0px] vertical-mid hover:bg-gray-100 hover:dark:bg-gray-800"
     flex="items-center justify-start"
     :href="link ?? 'javascript: void 0;'"
     target="_blank"

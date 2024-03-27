@@ -34,6 +34,7 @@ const routes: Post[] = router
     upcoming: i.meta.frontmatter.upcoming,
     redirect: i.meta.frontmatter.redirect,
     place: i.meta.frontmatter.place,
+    desc: i.meta.frontmatter.description,
   }))
 
 const posts = computed(() =>
@@ -46,7 +47,7 @@ const posts = computed(() =>
 <template>
   <template v-if="!posts.length">
     <div py2 op50>
-      { nothing here yet }
+      nothing here yet
     </div>
   </template>
   <ul v-else>
@@ -74,13 +75,20 @@ const posts = computed(() =>
             "
             class="item block font-normal mb-6 mt-2 no-underline"
           >
-            <span class="text-sm mr-2">
-              {{ post.title }}
-            </span>
-            <span class="text-sm op50">
-              {{ formatDate(post.date, false) }}
-              <span v-if="post.duration">· {{ post.duration }}</span>
-            </span>
+            <section>
+              <span class="text-sm mr-2">
+                {{ post.title }}
+              </span>
+              <span class="text-sm op50">
+                {{ formatDate(post.date, false) }}
+                <span v-if="post.duration">· {{ post.duration }}</span>
+              </span>
+            </section>
+            <section v-if="post.desc" class="lh-4">
+              <span class="text-xs op35 line-clamp-1">
+                {{ post.desc }}
+              </span>
+            </section>
           </component>
         </li>
       </div>

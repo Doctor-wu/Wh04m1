@@ -22,12 +22,12 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import WrapperPost from './components/WrapperPost.vue'
 
-const routes = autoRoutes.map((i) => {
+const routes = autoRoutes.map((r) => {
   return {
-    ...i,
-    alias: i.path.endsWith('/')
-      ? `${i.path}index.html`
-      : `${i.path}.html`,
+    ...r,
+    alias: r.path.endsWith('/')
+      ? `${r.path}index.html`
+      : `${r.path}.html`,
   }
 })
 

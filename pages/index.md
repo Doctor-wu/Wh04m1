@@ -22,6 +22,10 @@ Find me on
 
 If you enjoy my works, consider sponsoring me on [<span i-carbon-lightning /> 爱发电](https://afdian.net/a/doctorwu) to keep them sustainable.
 
-<p class="!op75">
-This site designs highly inspired by <PeopleWithAvatar link="https://antfu.me" name="Anthony Fu" avatarUrl="https://avatars.githubusercontent.com/u/11247099" />
+<p>
+This site designs highly inspired by <PeopleWithAvatar
+ link="https://antfu.me"
+ name="Anthony Fu"
+ avatarUrl="https://avatars.githubusercontent.com/u/11247099"
+/>
 </p>

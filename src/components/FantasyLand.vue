@@ -1,12 +1,19 @@
 <script setup lang="ts">
+import { breakpointsTailwind } from '@vueuse/core'
 
+const isDark = useDark()
+const {
+  isSmaller,
+} = useBreakpoints(breakpointsTailwind)
+const opacity = computed(() => (isDark.value ? 0.45 : 0.55) + (isSmaller('md') ? 0.1 : 0))
+const blur = computed(() => isSmaller('md') ? 'blur(100px)' : 'blur(150px)')
 </script>
 
 <template>
   <section id="land">
-    <div class="g-polygon-1" />
-    <div class="g-polygon-2" />
-    <div class="g-polygon-3" />
+    <section class="g-polygon-1" />
+    <section class="g-polygon-2" />
+    <section class="g-polygon-3" />
   </section>
 </template>
 
@@ -19,9 +26,9 @@
   width: 100vw;
   height: 100vh;
 
-  & > div {
+  & > section {
     position: absolute;
-    opacity: 0.5;
+    opacity: v-bind(opacity);
   }
 
   &::before {
@@ -31,7 +38,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    backdrop-filter: blur(150px);
+    backdrop-filter: v-bind(blur);
     z-index: 1;
   }
 }
@@ -40,8 +47,8 @@
   bottom: 100px;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 714px;
-  height: 390px;
+  width: 45vw;
+  height: 55vh;
   background: linear-gradient(#ffee55, #fdee99);
   clip-path: polygon(0 10%, 30% 0, 100% 40%, 70% 100%, 20% 90%);
 }
@@ -50,9 +57,16 @@
   bottom: 0px;
   left: 30%;
   transform: translate(-50%, 0);
-  width: 1000px;
-  height: 450px;
-  background: linear-gradient(-36deg, #e950d1, #f980d9);
+  width: 65vw;
+  height: 50vh;
+  background: linear-gradient(
+    -36deg,
+    #e950d1,
+    #f980d9,
+    #ff55ff,
+    #ff2c55,
+    #ff5e55
+  );
   clip-path: polygon(10% 0, 100% 70%, 100% 100%, 20% 90%);
 }
 
@@ -60,8 +74,8 @@
   bottom: 0px;
   left: 70%;
   transform: translate(-50%, 0);
-  width: 1000px;
-  height: 450px;
+  width: 65vw;
+  height: 50vh;
   background: rgba(87, 80, 233);
   clip-path: polygon(80% 0, 100% 70%, 100% 100%, 20% 90%);
 }

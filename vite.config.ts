@@ -145,7 +145,7 @@ export default defineConfig({
         '@vueuse/core',
       ],
       dirs: [
-        './src/*',
+        './src/**/*',
       ],
     }),
 

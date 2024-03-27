@@ -8,7 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     FantacyLand: typeof import('./src/components/FantacyLand.vue')['default']
-    FantasyLand: typeof import('~icons/fa/ntasy-land')['default']
+    FantasyLand: typeof import('./src/components/FantasyLand.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     GithubAvatar: typeof import('./src/components/widgets/GithubAvatar.vue')['default']
     Logo: typeof import('./src/components/Logo.vue')['default']

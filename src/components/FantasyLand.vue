@@ -5,7 +5,7 @@ const isDark = useDark()
 const {
   isSmaller,
 } = useBreakpoints(breakpointsTailwind)
-const opacity = computed(() => (isDark.value ? 0.45 : 0.55) + (isSmaller('md') ? 0.1 : 0))
+const opacity = computed(() => (isDark.value ? 0.45 : 0.52) + (isSmaller('md') ? 0.1 : 0))
 const blur = computed(() => isSmaller('md') ? 'blur(100px)' : 'blur(150px)')
 </script>
 

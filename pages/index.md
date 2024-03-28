@@ -4,7 +4,7 @@ description: About me
 image: https://doctorwu.info/og.png
 ---
 
-> This page is under developing 🚧.
+> This page is under development 🚧.
 
 Hey, I am Doctor Wu, an open source enthusiast.
 

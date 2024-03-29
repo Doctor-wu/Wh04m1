@@ -17,7 +17,5 @@ package = "@netlify/plugin-lighthouse"
 [plugins.inputs.thresholds]
 performance = 0.9
 
-# to audit a path other than /
-[[plugins.inputs.audits]]
-path = "posts.html"
-output_path = "reports/posts-index.html"
+[plugins.inputs.settings]
+preset = "desktop" # Optionally run Lighthouse using a desktop configuration

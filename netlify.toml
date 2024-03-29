@@ -9,3 +9,15 @@ NODE_VERSION = "20"
 from = "/*"
 to = "/index.html"
 status = 200
+
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
+
+# Set minimum thresholds for each report area
+[plugins.inputs.thresholds]
+performance = 0.9
+
+# to audit a path other than /
+[[plugins.inputs.audits]]
+path = "posts.html"
+output_path = "reports/posts-index.html"

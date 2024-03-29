@@ -18,6 +18,8 @@ declare module 'vue' {
     Posts: typeof import('./src/components/Posts.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TargetBlankLink: typeof import('./src/components/widgets/TargetBlankLink.vue')['default']
+    TargetLink: typeof import('./src/components/widgets/TargetLink.vue')['default']
     ToggleTheme: typeof import('./src/components/ToggleTheme.vue')['default']
     WrapperPost: typeof import('./src/components/WrapperPost.vue')['default']
   }

@@ -1,4 +1,5 @@
 // uno.config.ts
+import { resolve } from 'node:path'
 import {
   defineConfig,
   presetAttributify,
@@ -8,6 +9,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import { loadCustomIcon } from './scripts/load-custom-icon'
 
 export default defineConfig({
   // ...UnoCSS options
@@ -30,6 +32,11 @@ export default defineConfig({
   ],
   presets: [
     presetIcons({
+      collections: {
+        custom: {
+          moego: loadCustomIcon(resolve(__dirname, 'public/moego.svg')),
+        },
+      },
       extraProperties: {
         'display': 'inline-block',
         'height': '1.2em',

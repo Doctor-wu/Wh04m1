@@ -8,6 +8,9 @@ image: https://doctorwu.info/og.png
 
 Hey, I am Doctor Wu, an open source enthusiast.
 
+Currently, I am working at <a href="https://github.com/MoeGolibrary" target="_target"><span class="i-custom:moego?mask mb-1px" /> MoeGo</a>.<br>
+Member of <a href="https://vueuse.org" target="_target">VueUse</a>, with substantial passion on Vue ecosystem. Recently contributing on <a class="text-nowrap" href="https://github.com/vuejs/core" target="_target">Vue Core</a> and <a class="text-nowrap" href="https://github.com/vuejs/core-vapor" target="\_target">Vue Vapor</a>.
+
 ---
 
 Find me on

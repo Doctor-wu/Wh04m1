@@ -74,9 +74,7 @@ onMounted(() => {
 
 <template>
   <ClientOnly v-if="!frontmatter.decorator">
-    <!-- <section class="w-full h-full fixed left-0 top-0 backdrop-blur-150"> -->
     <FantasyLand />
-    <!-- </section> -->
   </ClientOnly>
   <div v-if="frontmatter.display ?? frontmatter.title" class="prose m-auto mb-8" :class="[frontmatter.wrapperClass]">
     <h1 class="mb-0 slide-enter-50">

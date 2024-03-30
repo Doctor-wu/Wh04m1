@@ -11,7 +11,6 @@ const blur = computed(() => isSmaller('md') ? 'blur(100px)' : 'blur(160px)')
 
 <template>
   <section id="fantasy-land">
-    <p class="mask" />
     <section class="g-polygon-1" />
     <section class="g-polygon-2" />
     <section class="g-polygon-3" />
@@ -23,28 +22,18 @@ const blur = computed(() => isSmaller('md') ? 'blur(100px)' : 'blur(160px)')
   will-change: auto;
   position: fixed;
   left: 0;
+  right: 0;
   top: 0;
+  bottom: 0;
   z-index: -1;
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
+  filter: v-bind(blur);
 
   & > section {
     position: absolute;
     opacity: v-bind(opacity);
     transition: all ease-out 0.5s;
     transform: scale(1);
-  }
-
-  & > .mask {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    backdrop-filter: v-bind(blur);
-    z-index: 1;
   }
 }
 

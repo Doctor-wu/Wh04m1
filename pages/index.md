@@ -37,10 +37,10 @@ Find me on
   <a href="https://juejin.cn/user/1723677080556621" target="_blank"><span op75 i-simple-icons-juejin /> 掘金</a>
 </p>
 
-If you enjoy my works, consider sponsoring me on <a class="pb-[0.1em]" href="https://afdian.net/a/doctorwu" target="_blank"><span op75 i-carbon-lightning /> 爱发电</a> to keep them sustainable.
+If you enjoy my works, consider sponsoring me on <TargetLink href="https://github.com/sponsors/Doctor-wu"><span i-carbon-favorite /> GitHub Sponsor</TargetLink> or <TargetLink href="https://afdian.net/a/doctorwu"><span op75 i-carbon-lightning /> 爱发电</TargetLink> to keep them sustainable.
 
 <p>
-This site designs highly inspired by <PeopleWithAvatar
+This site designs highly inspired by &nbsp;<PeopleWithAvatar
  link="https://antfu.me"
  name="Anthony Fu"
  avatarUrl="https://avatars.githubusercontent.com/u/11247099"

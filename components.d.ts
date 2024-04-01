@@ -7,18 +7,15 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    FantacyLand: typeof import('./src/components/FantacyLand.vue')['default']
     FantasyLand: typeof import('./src/components/FantasyLand.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
-    GithubAvatar: typeof import('./src/components/widgets/GithubAvatar.vue')['default']
     Logo: typeof import('./src/components/Logo.vue')['default']
     NavBar: typeof import('./src/components/NavBar.vue')['default']
     PeopleWithAvatar: typeof import('./src/components/widgets/PeopleWithAvatar.vue')['default']
-    PersonWithAvatar: typeof import('./src/components/widgets/PersonWithAvatar.vue')['default']
     Posts: typeof import('./src/components/Posts.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TargetBlankLink: typeof import('./src/components/widgets/TargetBlankLink.vue')['default']
+    Signature: typeof import('./src/components/Signature.vue')['default']
     TargetLink: typeof import('./src/components/widgets/TargetLink.vue')['default']
     ToggleTheme: typeof import('./src/components/ToggleTheme.vue')['default']
     WrapperPost: typeof import('./src/components/WrapperPost.vue')['default']

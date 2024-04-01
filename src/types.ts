@@ -1,6 +1,7 @@
 export interface Post {
   path: string
   title: string
+  tags?: string[]
   place?: string
   date: string
   lang?: string
@@ -17,6 +18,7 @@ export interface Post {
 export interface CustomFrontmatter {
   type: 'post'
   title: string
+  signature?: boolean
   decorator?: boolean
   subtitle?: string
   class?: string
@@ -27,7 +29,7 @@ export interface CustomFrontmatter {
   description?: string
   date: string
   lang?: 'en' | 'zh'
-  tags: string[]
+  tags?: string
   redirect?: string
   duration?: string
   recording?: string

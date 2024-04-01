@@ -8,7 +8,7 @@ const { frontmatter } = defineProps<{
 
 const router = useRouter()
 const route = useRoute()
-const content = ref<HTMLDivElement>()
+const content = ref<HTMLElement>()
 
 const base = getHostName()
 const tweetUrl = computed(
@@ -76,13 +76,22 @@ onMounted(() => {
   <ClientOnly v-if="!frontmatter.decorator">
     <FantasyLand />
   </ClientOnly>
-  <div v-if="frontmatter.display ?? frontmatter.title" class="prose m-auto mb-8" :class="[frontmatter.wrapperClass]">
+  <section
+    v-if="frontmatter.display ?? frontmatter.title" class="prose m-auto mb-8"
+    :class="[frontmatter.wrapperClass]"
+  >
     <h1 class="mb-0 slide-enter-50">
       {{ frontmatter.display ?? frontmatter.title }}
     </h1>
     <p v-if="frontmatter.date" class="opacity-50 !-mt-6 slide-enter-50">
       {{ formatDate(frontmatter.date, false) }}
       <span v-if="frontmatter.duration">· {{ frontmatter.duration }}</span>
+      <span v-if="frontmatter.tags" class="ml-2 vertical-4%">
+        <span v-for="(tag, index) in frontmatter.tags.split(',') " :key="index">
+          <span v-if="index > 0" class="mx-1">·</span>
+          <span class="text-xs bg-zinc:45 dark:bg-zinc:15 px-1 py-0.5 rounded" ws-nowrap>{{ tag.trim() }}</span>
+        </span>
+      </span>
     </p>
     <p v-if="frontmatter.place" class="mt--4!">
       <span op50>at </span>
@@ -100,11 +109,14 @@ onMounted(() => {
       This is a draft post, the content may be incomplete. Please check back
       later.
     </p>
-  </div>
+  </section>
   <article ref="content" :class="[frontmatter.tocAlwaysOn ? 'toc-always-on' : '', frontmatter.class]">
     <slot />
   </article>
-  <div v-if="route.path !== '/'" class="prose m-auto mt-8 mb-8 slide-enter animate-delay-500 print:hidden">
+  <section v-if="route.path !== '/'" class="prose m-auto mt-8 mb-8 slide-enter animate-delay-500 print:hidden">
+    <section v-if="frontmatter.signature" class="flex justify-end mb-12 !mt-24">
+      <Signature />
+    </section>
     <template v-if="frontmatter.duration">
       <span font-mono op50>> </span>
       <span op50>comment on </span>
@@ -116,5 +128,5 @@ onMounted(() => {
       :to="route.path.split('/').slice(0, -1).join('/') || '/'" class="font-mono op50 hover:op75"
       v-text="'cd ..'"
     />
-  </div>
+  </section>
 </template>

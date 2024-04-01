@@ -99,6 +99,10 @@ html:not(.dark) .shiki span {
   text-underline-offset: 3px;
 }
 
+.prose ol > li::before {
+  color: inherit;
+}
+
 html.dark .prose {
   --fg-light: #888;
   --fg: #bbb;

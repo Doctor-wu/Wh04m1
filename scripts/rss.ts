@@ -27,7 +27,7 @@ async function buildBlogRSS() {
 
   const options = {
     title: 'Doctor Wu',
-    description: 'Doctor Wu\' Blog',
+    description: 'Doctor Wu\'s Blog',
     id: 'https://doctorwu.info/',
     link: 'https://doctorwu.info/',
     copyright: 'CC BY-NC-SA 4.0 2024 © Doctor Wu',
@@ -43,9 +43,6 @@ async function buildBlogRSS() {
         .map(async (i) => {
           const raw = await fs.readFile(i, 'utf-8')
           const { data, content } = matter(raw)
-
-          if (data.lang !== 'en')
-            return
 
           const html = markdown.render(content)
             .replace('src="/', `src="${DOMAIN}/`)

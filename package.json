@@ -10,6 +10,7 @@
     "@vueuse/core": "^10.9.0",
     "dayjs": "^1.11.10",
     "floating-vue": "2.0.0-beta.24",
+    "markdown-it-magic-link": "^0.0.2",
     "nprogress": "^0.2.0",
     "shiki-magic-move": "^0.3.2",
     "vue": "^3.4.21",

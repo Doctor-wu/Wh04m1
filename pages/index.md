@@ -8,13 +8,13 @@ image: https://doctorwu.info/og.png
 
 Hey, I am Doctor Wu, an open source enthusiast.<br>
 
-Working at <TargetLink href="https://github.com/MoeGolibrary"><span class="i-custom:moego?mask mb-1px" /> MoeGo</TargetLink>.<br>
-Core team member of <TargetLink href="https://github.com/vueuse/vueuse"><span i-octicon:repo-24 op75 /> VueUse</TargetLink>, with substantial passion on OSS.<br>
-Recently contributing on <TargetLink href="https://github.com/vuejs/core"><span i-octicon:repo-24 op75 /> Vue Core</TargetLink> and <TargetLink href="https://github.com/vuejs/core-vapor"><span i-octicon:repo-24 op75 /> Vue Vapor</TargetLink>.
+Working at {Moego|https://github.com/MoeGolibrary}<br>
+Core team member of {VueUse|https://github.com/vueuse/vueuse}, with substantial passion on OSS.<br>
+Recently contributing on {Vue Core|https://github.com/vuejs/core} and {Vue Vapor|https://github.com/vuejs/core-vapor}
 
 I would like you to just call me Doctor<span i-openmoji:tardis op75 />, maybe I will write a blog to explain it in the future.
 
-The beginning of my involvement with OSS was when I started to contribute on <TargetLink href="https://github.com/vueuse/vueuse" target="_target"><span i-octicon:repo-24 op75 /> VueUse</TargetLink>, I found it was a cool repo since it collect so many useful Vue Composition API utilities. I think that will be cool if I can somehow contribute to it. So I started attempt to write some utilities and fix some bugs of it. After some days, I was surprised that &nbsp;<PeopleWithAvatar
+The beginning of my involvement with OSS was when I started to contribute on {VueUse|https://github.com/vueuse/vueuse}, I found it was a cool repo since it collect so many useful Vue Composition API utilities. I think that will be cool if I can somehow contribute to it. So I started attempt to write some utilities and fix some bugs of it. After some days, I was surprised that &nbsp;<PeopleWithAvatar
  link="https://antfu.me"
  name="Anthony Fu"
  avatarUrl="https://avatars.githubusercontent.com/u/11247099"
@@ -39,12 +39,9 @@ Find me on
 
 If you enjoy my works, consider sponsoring me on <TargetLink href="https://github.com/sponsors/Doctor-wu"><span i-carbon-favorite /> GitHub Sponsor</TargetLink> or <TargetLink href="https://afdian.net/a/doctorwu"><span op75 i-carbon-lightning /> 爱发电</TargetLink> to keep them sustainable.
 
-<p>
-This site designs highly inspired by &nbsp;<PeopleWithAvatar
+This site designs highly inspired by <PeopleWithAvatar
  link="https://antfu.me"
  name="Anthony Fu"
- avatarUrl="https://avatars.githubusercontent.com/u/11247099"
+ avatarUrl="https://github.com/antfu.png"
 />, thank you Anthony!<br>
-Source of this site <TargetLink href="https://github.com/Doctor-wu/Wh04m1"><span i-octicon:repo-24 op75 /> Wh04m1</TargetLink>, feel free to re-design this as your own site, if you like it, please consider give me a star.
-
-</p>
+Source of this site {Wh04m1|https://github.com/Doctor-wu/Wh04m1}, feel free to re-design this as your own site, if you like it, please consider give me a star.

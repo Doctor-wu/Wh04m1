@@ -61,6 +61,7 @@ html:not(.dark) .shiki span {
 }
 
 .prose {
+  --fg-light: #888;
   --fg: #555;
   --fg-deep: #222;
   --fg-deeper: #000;
@@ -88,7 +89,18 @@ html:not(.dark) .shiki span {
   margin: 2em auto;
 }
 
+.prose s {
+  opacity: 0.5;
+}
+
+.prose em {
+  text-decoration: underline;
+  text-decoration-color: #aaa3;
+  text-underline-offset: 3px;
+}
+
 html.dark .prose {
+  --fg-light: #888;
   --fg: #bbb;
   --fg-deep: #ddd;
   --fg-deeper: #fff;
@@ -217,4 +229,61 @@ h6:focus .header-anchor {
 
 .code-wrap .line {
   white-space: break-spaces;
+}
+
+.markdown-magic-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #8883;
+  transform: translateY(3px);
+  line-height: 100%;
+  color: var(--fg-light) !important;
+  transition: 0.15s all ease-out !important;
+  overflow: hidden;
+  --uno: gap-1 rounded px1.5 py1 important-border-0 font-condensed;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -110%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0)
+    );
+  }
+}
+
+.markdown-magic-link:hover {
+  background-color: #8884;
+  color: var(--fg) !important;
+  &::before {
+    left: 110%;
+    transition: all 0.8s;
+  }
+}
+
+.markdown-magic-link-image {
+  display: inline-block;
+  height: 1.1em;
+  width: 1.1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2px;
+}
+
+.markdown-magic-link.markdown-magic-link-github-at {
+  transform: translateY(6px);
+  --uno: pl-0 py-0 pr2 uppercase text-sm gap-1.2 rounded-full;
+}
+
+.markdown-magic-link.markdown-magic-link-github-at .markdown-magic-link-image {
+  height: 1.6em;
+  width: 1.6em;
+  border-radius: 50%;
 }

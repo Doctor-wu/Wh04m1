@@ -8,9 +8,9 @@ defineProps<{
 
 <template>
   <a
-    class="base !border-none !no-underline cursor-pointer !text-inherit inline-flex rounded-4 !h-6 pr-2 py-[0px] vertical-mid box-content relative mb-[2px]"
-    hover="bg-gray-100 dark:bg-gray-500 !bg-op40 !outline-1 !outline-gray-3:50 !dark:outline-gray-4:10 !outline-solid"
-    flex="items-center justify-start" :href="link ?? 'javascript: void 0;'" target="_blank"
+    class="base !border-none !no-underline !text-[var(--fg-light)] inline-flex rounded-4 !h-6 pr-2 py-[0px] vertical-mid box-content relative mb-[2px] bg-[#8882]"
+    hover="bg-[#8883] !bg-op40 !text-[var(--fg)]" flex="items-center justify-start"
+    :href="link ?? 'javascript: void 0;'" target="_blank" font-condensed
   >
     <img class="inline !rounded-4 h-5 !w-5 ml-[2px]" :src="avatarUrl" alt="Avatar">
     <span class="ml-1 text-sm">{{ name }}</span>

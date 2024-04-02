@@ -16,6 +16,7 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Signature: typeof import('./src/components/Signature.vue')['default']
+    SponsorButton: typeof import('./src/components/SponsorButton.vue')['default']
     TargetLink: typeof import('./src/components/widgets/TargetLink.vue')['default']
     ToggleTheme: typeof import('./src/components/ToggleTheme.vue')['default']
     WrapperPost: typeof import('./src/components/WrapperPost.vue')['default']

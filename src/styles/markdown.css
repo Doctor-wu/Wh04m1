@@ -61,8 +61,8 @@ html:not(.dark) .shiki span {
 }
 
 .prose {
-  --fg-light: #888;
-  --fg: #555;
+  --fg-light: #666;
+  --fg: #444;
   --fg-deep: #222;
   --fg-deeper: #000;
 
@@ -104,8 +104,8 @@ html:not(.dark) .shiki span {
 }
 
 html.dark .prose {
-  --fg-light: #888;
-  --fg: #bbb;
+  --fg-light: #aaa;
+  --fg: #ccc;
   --fg-deep: #ddd;
   --fg-deeper: #fff;
 }

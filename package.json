@@ -3,6 +3,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production vite-ssg build && esno ./scripts/rss.ts",
     "dev": "vite --port=9582 --open",
+    "static": "rimraf temp && degit Doctor-wu/static temp --force && esno scripts/copy-sponsors",
     "lint": "eslint .",
     "compress": "esno scripts/img-compress-staged.ts"
   },

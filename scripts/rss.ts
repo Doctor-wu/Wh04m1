@@ -6,7 +6,7 @@ import MarkdownIt from 'markdown-it'
 import type { FeedOptions, Item } from 'feed'
 import { Feed } from 'feed'
 
-const DOMAIN = 'https://doctorwu.info'
+const DOMAIN = 'https://doctorwu.me'
 const AUTHOR = {
   name: 'Doctor Wu',
   email: 'wuzhouchun23@gmail.com',
@@ -28,13 +28,13 @@ async function buildBlogRSS() {
   const options = {
     title: 'Doctor Wu',
     description: 'Doctor Wu\'s Blog',
-    id: 'https://doctorwu.info/',
-    link: 'https://doctorwu.info/',
+    id: 'https://doctorwu.me/',
+    link: 'https://doctorwu.me/',
     copyright: 'CC BY-NC-SA 4.0 2024 © Doctor Wu',
     feedLinks: {
-      json: 'https://doctorwu.info/feed.json',
-      atom: 'https://doctorwu.info/feed.atom',
-      rss: 'https://doctorwu.info/feed.xml',
+      json: 'https://doctorwu.me/feed.json',
+      atom: 'https://doctorwu.me/feed.atom',
+      rss: 'https://doctorwu.me/feed.xml',
     },
   }
   const posts: any[] = (
@@ -68,8 +68,8 @@ async function buildBlogRSS() {
 
 async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
   options.author = AUTHOR
-  options.image = 'https://doctorwu.info/avatar.jpg'
-  options.favicon = 'https://doctorwu.info/favicon.png'
+  options.image = 'https://doctorwu.me/avatar.jpg'
+  options.favicon = 'https://doctorwu.me/favicon.png'
 
   const feed = new Feed(options)
 

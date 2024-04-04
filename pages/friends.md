@@ -120,7 +120,8 @@ description: Friends of Doctor Wu
       name: '皮普的数字花园',
       link: 'https://pipuwong.com/',
       slogan: '摄影/设计/代码三修',
-      avatarLink: 'https://pipuwong.com/wp-content/uploads/2023/12/pipuwongcom-logo.jpg'
+      avatarLink: 
+'https://pipuwong.com/wp-content/uploads/2023/12/pipuwongcom-logo.jpg'
     },
     ]"
  />

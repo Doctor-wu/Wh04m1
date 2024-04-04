@@ -9,7 +9,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     FantasyLand: typeof import('./src/components/FantasyLand.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
-    Friends: typeof import('./src/components/Friends.vue')['default']
     FriendsList: typeof import('./src/components/FriendsList.vue')['default']
     Logo: typeof import('./src/components/Logo.vue')['default']
     NavBar: typeof import('./src/components/NavBar.vue')['default']

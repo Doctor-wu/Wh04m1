@@ -37,8 +37,8 @@ const { y: scroll } = useWindowScroll()
         <RouterLink to="/sponsors-list" title="Sponsors">
           <div i-ri-user-heart-line />
         </RouterLink>
-        <RouterLink to="/friends" title="Friends">
-          <div i-bi:people />
+        <RouterLink hidden md:inline-block to="/friends" title="Friends">
+          <div i-bi:people class="text-4.5 vertical--19%" />
         </RouterLink>
         <a href="https://twitter.com/Doctorwu666" target="_blank" title="Twitter">
           <div i-ri-twitter-x-fill />

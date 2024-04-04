@@ -26,7 +26,7 @@ const {
     class="wrapper grid grid-cols-1 gap-5xl mt-12" :class="[
       greater('lg').value ? 'grid-cols-2' : '',
       greater('xl').value ? 'grid-cols-3' : '',
-      greater('2xl').value ? 'mx-60' : '',
+      greater('2xl').value ? 'mx-50' : '',
       smaller('md').value ? '!gap-3xl' : '',
     ]"
   >

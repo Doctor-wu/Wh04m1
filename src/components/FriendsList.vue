@@ -24,7 +24,7 @@ const {
   </p>
   <p
     class="wrapper grid grid-cols-1 gap-5xl mt-12" :class="[
-      greater('lg').value ? 'grid-cols-2' : '',
+      greater('md').value ? 'grid-cols-2' : '',
       greater('xl').value ? 'grid-cols-3' : '',
       greater('2xl').value ? 'mx-50' : '',
       smaller('md').value ? '!gap-3xl' : '',
@@ -33,12 +33,11 @@ const {
     <template v-for="friend in friends" :key="friend.name">
       <a
         flex="~ justify-start items-center gap-4"
-        class="overflow-hidden rounded-4 border border-[#8888] cursor-pointer h-50 transition-all" :class="[
-          smaller('md').value ? '!h-35' : '',
+        class="overflow-hidden rounded-4 border border-[#8888] cursor-pointer h-35 transition-all" :class="[
         ]" hover="border-[#888]" :href="friend.link" target="_blank"
       >
         <section
-          class="h-full w-50 overflow-hidden" :class="[
+          class="h-full w-35 overflow-hidden" :class="[
             smaller('md').value ? '!w-30vw' : '',
           ]"
         >
@@ -50,12 +49,12 @@ const {
           >
         </section>
         <section
-          class="px-4 py-6 h-full" flex="~ 1 col gap-2" :class="[
+          class="!pl-0 !pr-2 !py-2 h-full" flex="~ 1 col gap-2" :class="[
             smaller('md').value ? '!pl-0 !pr-2 !py-2' : '',
           ]"
         >
-          <span font-700 text-lg md:text-2xl>{{ friend.name }}</span>
-          <span text-sm md:text-lg text-gray-600 dark:text-gray-400 v-html="friend.slogan" />
+          <span font-700 text-lg md:text-xl>{{ friend.name }}</span>
+          <span text-sm text-gray-600 dark:text-gray-400 v-html="friend.slogan" />
         </section>
       </a>
     </template>

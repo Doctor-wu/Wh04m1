@@ -2,6 +2,7 @@
 title: Doctor Wu
 description: About me
 image: https://doctorwu.me/og.png
+decorator: true
 ---
 
 > "The Doctor will see you now."

@@ -3,6 +3,7 @@ title: Sponsors - Doctor Wu
 display: Sponsors
 subtitle: Thank you guys so much!
 description: Sponsors of Doctor Wu
+decorator: true
 ---
 
 <!-- @layout-full-width -->

@@ -73,8 +73,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <ClientOnly v-if="!frontmatter.decorator">
-    <FantasyLand />
+  <ClientOnly v-if="frontmatter.decorator">
+    <FantasyLand v-if="frontmatter.decorator" />
   </ClientOnly>
   <section
     v-if="frontmatter.display ?? frontmatter.title" class="prose m-auto mb-8"

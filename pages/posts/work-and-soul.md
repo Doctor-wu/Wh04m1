@@ -6,6 +6,7 @@ date: 2024-04-01T12:23:25.353Z
 duration: 6 min
 tags: 职场, 生活, 抉择
 signature: true
+decorator: false
 ---
 
 > 我不想把我职业生涯的决定权放在别人的手上, 不想把是否优秀的标准放在个别人的手上 , 不想做低效的事

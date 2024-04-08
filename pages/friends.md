@@ -2,6 +2,7 @@
 title: Doctor Wu's Friends
 display: ''
 description: Friends of Doctor Wu
+decorator: true
 ---
 
 <!-- @layout-full-width -->

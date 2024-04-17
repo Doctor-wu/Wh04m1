@@ -7,9 +7,11 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    ArticleCard: typeof import('./src/components/widgets/ArticleCard.vue')['default']
     FantasyLand: typeof import('./src/components/FantasyLand.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     FriendsList: typeof import('./src/components/FriendsList.vue')['default']
+    Image: typeof import('./src/components/widgets/Image.vue')['default']
     Logo: typeof import('./src/components/Logo.vue')['default']
     NavBar: typeof import('./src/components/NavBar.vue')['default']
     PeopleWithAvatar: typeof import('./src/components/widgets/PeopleWithAvatar.vue')['default']

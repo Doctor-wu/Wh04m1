@@ -28,7 +28,7 @@ My initial thought was to ask ChatGPT to generate me a signature, but the outcom
 
 So I turned to Google and found a website called [<span i-mdi:web/> Signaturely](https://signaturely.com/online-signature/). It provides a simple way to generate a signature by typing your name and selecting a font. I tried a few fonts and finally found one that I like.
 
-<Image src="/public/images/animation-signature/google-signature-generate.png" alt="signaturely snapshot" />
+<Image src="/images/animation-signature/google-signature-generate.png" alt="signaturely snapshot" />
 
 However I found the file format is PNG instead of SVG, so I got another problem, **how to convert a PNG to SVG**?
 

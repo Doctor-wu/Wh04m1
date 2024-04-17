@@ -24,7 +24,7 @@ And I started to read Anthony's article, tried to understand how it works. Howev
 
 My initial thought was to ask ChatGPT to generate me a signature, but the outcome was not satisfactory (to be honest, it was just plain text 😅).
 
-<Image src="/public/images/animation-signature/gpt-ask-for-signature.png" alt="ChatGPT Result" />
+<Image src="/images/animation-signature/gpt-ask-for-signature.png" alt="ChatGPT Result" />
 
 So I turned to Google and found a website called [<span i-mdi:web/> Signaturely](https://signaturely.com/online-signature/). It provides a simple way to generate a signature by typing your name and selecting a font. I tried a few fonts and finally found one that I like.
 
@@ -32,17 +32,17 @@ So I turned to Google and found a website called [<span i-mdi:web/> Signaturely]
 
 However I found the file format is PNG instead of SVG, so I got another problem, **how to convert a PNG to SVG**?
 
-<Image src="/public/images/animation-signature/signature-download-preview.png" alt="signature download preview" />
+<Image src="/images/animation-signature/signature-download-preview.png" alt="signature download preview" />
 
 ## Convert PNG to SVG
 
 I choose to trust ChatGPT one more time and asked it how to convert a PNG to SVG. This time, it gave me a good answer.
 
-<Image src="/public/images/animation-signature/how-to-convert-png-to-svg.png" alt="ChatGPT Result" />
+<Image src="/images/animation-signature/how-to-convert-png-to-svg.png" alt="ChatGPT Result" />
 
 I found a free and relatively easy-to-use tool called InkScape. I uploaded the PNG file and I somehow got an path!
 
-<Image src="/public/images/animation-signature/get-path-from-png.png" alt="ChatGPT Result" />
+<Image src="/images/animation-signature/get-path-from-png.png" alt="ChatGPT Result" />
 
 ## Animation
 

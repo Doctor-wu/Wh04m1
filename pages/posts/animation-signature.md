@@ -9,6 +9,8 @@ signature: true
 decorator: false
 ---
 
+> [中文版本 Chinese Version](/posts/animation-signature-zh)
+
 A few days ago, I built my own personal website and wanted to create some cool stuff to make it fancy. One of those things is making an animated signature. I once saw Anthony Fu's animated signature and thought it was really cool, so I decided to one for myself.
 
 <ArticleCard

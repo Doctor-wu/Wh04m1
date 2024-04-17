@@ -9,7 +9,7 @@ signature: true
 decorator: false
 ---
 
-> [英文版本 English Version](/posts/animation-signature-zh)
+> [英文版本 English Version](/posts/animation-signature)
 
 一段时间前, 我搭建了自己的个人网站。我想要把他弄得酷炫一些, 其中动画签名就是我想要的一个元素。我曾经看到过 Anthony Fu 在他的个人网站上加的动画签名, 我觉得很酷, 所以我决定给自己也搞一个。
 

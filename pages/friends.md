@@ -129,5 +129,11 @@ decorator: true
       slogan: '摄影/设计/代码三修',
       avatarLink: 'https://pipuwong.com/wp-content/uploads/2023/12/pipuwongcom-logo.jpg'
     },
+    {
+      name: 'XiaoDong',
+      link: 'https://xiaodong.moe/',
+      slogan: 'A 15 year old web developer.',
+      avatarLink: 'https://github.com/xiaodong2008.png'
+    }
     ]"
  />

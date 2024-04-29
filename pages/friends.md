@@ -25,7 +25,7 @@ decorator: true
       name: 'Kevin 三咲智子',
       link: 'https://xlog.sxzz.moe/',
       slogan: 'Think more, talk less.',
-      avatarLink: 'https://github.com/sxzz.png'
+      avatarLink: 'https://github.com/sxzz.png',
     },
     {
       name: '华铧',
@@ -40,10 +40,10 @@ decorator: true
       avatarLink: 'https://github.com/HerringtonDarkholme.png',
     },
     {
-      name: 'Bruce 小胡同学',
-      link: 'https://yinji.org/',
-      slogan: '君子可内敛不可懦弱，面不公可起而论之',
-      avatarLink: 'https://github.com/huhexian.png',
+      name: 'Simon He',
+      link: 'https://simonme.netlify.app/',
+      slogan: 'core member of unocss and vue vine, webview-use author',
+      avatarLink: 'https://github.com/Simon-He95.png',
     },
     {
       name: 'Innei',
@@ -56,6 +56,12 @@ decorator: true
       link: 'https://zgq.ink/about',
       slogan: '独处自洽，简单随和，接纳自己，也爱这个世界',
       avatarLink: 'https://github.com/zgq354.png',
+    },
+    {
+      name: 'Bruce 小胡同学',
+      link: 'https://yinji.org/',
+      slogan: '君子可内敛不可懦弱，面不公可起而论之',
+      avatarLink: 'https://github.com/huhexian.png',
     },
     {
       name: 'Riri',

@@ -22,6 +22,12 @@ decorator: true
       avatarLink: 'https://github.com/CaliCastle.png',
     },
     {
+      name: 'Kevin 三咲智子',
+      link: 'https://xlog.sxzz.moe/',
+      slogan: 'Think more, talk less.',
+      avatarLink: 'https://github.com/sxzz.png'
+    },
+    {
       name: '华铧',
       link: 'https://hua-bang.github.io/blog/',
       slogan: '学而知不足',

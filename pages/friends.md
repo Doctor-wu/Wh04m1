@@ -147,5 +147,11 @@ decorator: true
       slogan: '摄影/设计/代码三修',
       avatarLink: 'https://pipuwong.com/wp-content/uploads/2023/12/pipuwongcom-logo.jpg'
     },
+    {
+      name: 'Winches',
+      link: 'https://awesome-15docs.netlify.app/',
+      slogan: '写代码是毁灭，写到世界满目疮痍',
+      avatarLink: 'https://avatars.githubusercontent.com/u/96854855'
+    },
     ]"
  />

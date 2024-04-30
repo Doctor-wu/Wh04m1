@@ -140,6 +140,12 @@ decorator: true
       link: 'https://xiaodong.moe/',
       slogan: 'A 15 year old web developer.',
       avatarLink: 'https://github.com/xiaodong2008.png'
+    },
+    {
+      name: 'Kai',
+      link: 'https://kaiyi.cool/',
+      slogan: '🕶 SuperFly Coder Life.',
+      avatarLink: 'https://github.com/RealKai42.png'
     }
     ]"
  />

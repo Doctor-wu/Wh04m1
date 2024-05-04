@@ -28,6 +28,12 @@ decorator: true
       avatarLink: 'https://github.com/sxzz.png',
     },
     {
+      name: '沈青川',
+      link: 'https://blog.heteronova.cc/',
+      slogan: '愿我如长风，渡君行万里。',
+      avatarLink: 'https://github.com/ShenQingchuan.png',
+    },
+    {
       name: '华铧',
       link: 'https://hua-bang.github.io/blog/',
       slogan: '学而知不足',

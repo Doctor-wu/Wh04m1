@@ -48,7 +48,7 @@ decorator: false
 
 ## 动画
 
-在搞定签名的 SVG 之后, 给他加上动画就比较建单了, 我利用了 **stroke-dasharray** 和 **stroke-dashoffset** 来创建绘制效果, 并使用 `@keyframes` 来控制动画, 最终得到了一个相对比较满意的效果。以下是最终代码:
+在搞定签名的 SVG 之后, 给他加上动画就比较简单了, 我利用了 **stroke-dasharray** 和 **stroke-dashoffset** 来创建绘制效果, 并使用 `@keyframes` 来控制动画, 最终得到了一个相对比较满意的效果。以下是最终代码:
 
 ```vue
 <script setup lang="ts">

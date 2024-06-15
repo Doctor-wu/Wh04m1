@@ -10,8 +10,8 @@ decorator: true
 Hey, I am Doctor Wu, an open source enthusiast.<br>
 
 Working at {Moego|https://github.com/MoeGolibrary}<br>
-Core team member of {VueUse|https://github.com/vueuse/vueuse}, Collaborator of {Vue Vapor|https://github.com/vuejs/core-vapor}<br>
-Recently contributing on {Vue Core|https://github.com/vuejs/core} and {Vue Vapor|https://github.com/vuejs/core-vapor}
+Core team member of {Vue|https://github.com/vuejs} and {VueUse|https://github.com/vueuse/vueuse}<br>
+Recently contributing on {Vue Vapor|https://github.com/vuejs/core-vapor} and {Vue Core|https://github.com/vuejs/core}
 
 I would like you to just call me Doctor<span i-openmoji:tardis op75 />, maybe I will write a blog to explain it in the future.
 

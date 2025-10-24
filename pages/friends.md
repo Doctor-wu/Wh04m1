@@ -29,7 +29,7 @@ decorator: true
     },
     {
       name: '沈青川',
-      link: 'https://blog.heteronova.cc/',
+      link: 'https://trantor.dokduk.cc/',
       slogan: '愿我如长风，渡君行万里。',
       avatarLink: 'https://github.com/ShenQingchuan.png',
     },

@@ -53,7 +53,7 @@ decorator: true
     },
     {
       name: 'Simon He',
-      link: 'https://simonme.netlify.app/',
+      link: 'https://simonhe.me',
       slogan: 'core member of unocss and vue vine, webview-use author',
       avatarLink: 'https://github.com/Simon-He95.png',
     },

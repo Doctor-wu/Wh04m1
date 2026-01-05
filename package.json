@@ -72,6 +72,11 @@
     "vite-ssg": "^0.23.6",
     "vite-svg-loader": "^5.1.0"
   },
+  "pnpm": {
+    "overrides": {
+      "rollup": "4.45.1"
+    }
+  },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
   },
